@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        Logo
+      </div>
+  
+        <ul class="list">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Question & Answers</li>
+        <li>About us</li>
+      </ul>
+    
+     
+      <button class="start-btn">Get Start</button>
+      <div id="hamburger" class="hamburger">
+        <span class=""></span>
+        <span class=""></span>
+        <span class=""></span>
+      </div>
+    </nav>
+
+
+
+    <header class="hero-container">
+      <div class="hero-first-col">
+        <h1>
+          <span>Corona</span>
+          virus statistics
+        </h1>
+        <p>
+          This is a simple website developed by Mohammadreza Mohammadi.
+          In this website we have used just HTML and CSS.
+        </p>
+        <div class="buttons">
+          <button class="first-button">Our Service</button>
+          <button class="second-button">Support</button>
+        </div>
+      </div>
+      <div class="hero-second-col">
+        <div class="image-container">  
+           <img
+            src="./assets/images/Medical/doctor.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+
+
+    <section class="statistics">
+      <h2>statistics</h2>
+      <div class="statistics-container">
+        <div class="statistics-first-col">
+          <div class="first-col-first-row">
+            <select name="contries" id="contries">
+              <option value="Canada">Canada</option>
+              <option value="Iran">Iran</option>
+              <option value="USA">USA</option>
+              <option value="Germany">Germany</option>
+            </select>
+            <select name="date" id="date">
+              <option value="2025">Date</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+            </select>
+
+            <button>Filter</button>
+          </div>
+
+          <div class="first-col-second-row">
+            <div>
+              <span>14</span><br />
+              Rank
+            </div>
+            <div>
+              <span>12,456</span><br />
+              Total Cases
+            </div>
+            <div class="death">
+              <span class="">836</span><br />
+              Death
+            </div>
+            <div>
+              <span>12,456</span><br />
+              Recovered
+            </div>
+            <div>
+              <span>12,456</span><br />
+              Recovered
+            </div>
+          </div>
+        </div>
+
+        <div class="statistics-second-col">
+          <h2>Today Statisticts</h2>
+          <div class="grid-box">
+            <div>
+              <span>2,464</span><br />
+              Total Cases
+            </div>
+            <div>
+              <span class="recovered">981</span><br />
+              Recovered
+            </div>
+            <div>
+              <span>1,643</span><br />
+              Infected Now
+            </div>
+            <div class="death">
+              <span>542</span><br />
+              Death
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="chart_container">
+      <h2>Chart</h2>
+      <div class="chart">
+        <div class="canvas-container"><canvas id="myChart1" width="" height=""></canvas></div>
+        <div class="canvas-container"><canvas id="myChart2" width="" height=""></canvas></div>
+        <div class="chart-second-col">
+          <h2>Today Statisticts</h2>
+          <div class="grid-box">
+            <div>
+              <span>2,464</span><br />
+              Total Cases
+            </div>
+            <div class="recovered">
+              <span>981</span><br />
+              Recovered
+            </div>
+            <div>
+              <span>1,643</span><br />
+              Infected Now
+            </div>
+            <div class="death">
+              <span>542</span><br />
+              Death
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <div class="orders">
+        <div class="orders-row">
+            <div class="orders-first-row">
+              <h2>Orders Country</h2>
+              <button class="orders-first-btn">Filter</button>
+            </div>
+      
+            <div class="orders-second-row">
+              <table>
+                  <thead>
+                      <tr>
+                          <th><div class="icon"><img src="./assets/images/icons/check.png" alt="">Country</div></th>
+                          <th>Total Cases</th>
+                          <th>Death</th>
+                          <th>Recovered</th>
+                          <th>RANK</th>
+                          <th>TRACKING</th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><div class="flag"><img src="./assets/images/flags/Flag_of_United_States_Flat_Round-64x64.png" alt="">USA</div></td>
+                          <td>10,637,456</td>
+                          <td>2,767,657</td>
+                          <td>8,647,746</td>
+                          <td>1</td>
+                          <td>IN332942</td>
+                          <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                      </tr>
+                      <tr>
+                        <td><div class="flag"><img src="./assets/images/flags/Flag_of_Peoples_Republic_of_China_Flat_Round-64x64.png" alt="">USA</div></td>
+                          <td>8,627,456</td>
+                          <td>2,232,876</td>
+                          <td>6,211,875</td>
+                          <td>2</td>
+                          <td>IN332942</td>
+                          <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                      </tr>
+                      <tr>
+                        <td><div class="flag"><img src="./assets/images/flags/Flag_of_India_Flat_Round-64x64.png" alt="">USA</div></td>
+                          <td>4,623,737</td>
+                          <td>1,761,762</td>
+                          <td>3,756,721</td>
+                          <td>3</td>
+                          <td>IN332942</td>
+                          <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                      </tr>
+                      <tr>
+                        <td><div class="flag"><img src="./assets/images/flags/Flag_of_Brazil_Flat_Round-64x64.png" alt="">USA</div></td>
+                          <td>2,512,456</td>
+                          <td>1,478,564</td>
+                          <td>1,746,761</td>
+                          <td>4</td>
+                          <td>IN332942</td>
+                          <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                      </tr>
+                      <tr>
+                        <td><div class="flag"><img src="./assets/images/flags/Flag_of_Argentina_Flat_Round-64x64.png" alt="">USA</div></td>
+                          <td>2,221,533</td>
+                          <td>1,243,765</td>
+                          <td>1,527,781</td>
+                          <td>5</td>
+                          <td>IN332942</td>
+                          <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                      </tr>
+                      <tr>
+                        <td><div class="flag"><img src="./assets/images/flags/Flag_of_Iran_Flat_Round-64x64.png" alt="">USA</div></td>
+                          <td>1,763,974</td>
+                          <td>1,129,874</td>
+                          <td>1,162,812</td>
+                          <td>6</td>
+                          <td>IN332942</td>
+                          <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                      </tr>
+                      <tr>
+                        <td><div class="flag"><img src="./assets/images/flags/Flag_of_Canada_Flat_Round-64x64.png" alt="">USA</div></td>
+                          <td>1,234,123</td>
+                          <td>1,110,456</td>
+                          <td>1,876,121</td>
+                          <td>7</td>
+                          <td>IN332942</td>
+                          <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="orders-second-btn-container"><button class="orders-second-btn">See more</button></div>  
+          </div>
+          </div>
+     </div>
+
+
+
+      <section class="blog">
+        <div class="blog-text">Blog</div>
+        <div class="blog-grid">
+          <div class="card box-1">
+            <div class="card-content">
+              <p>10 Dangerous desease Lorem spam</p>
+              <div class="content-box">
+         
+                <i class="fa-solid fa-calendar"></i>
+                <span> 2022/1/21</span>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                  Mohammadreza Mohammadi</span>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card box-2">
+            <div class="card-content">
+              <p>10 Dangerous desease Lorem spam</p>
+              <div class="content-box">
+
+                <i class="fa-solid fa-calendar"></i>
+                <span> 2022/1/21</span>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                  Mohammadreza Mohammadi</span>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card box-3">
+            <div class="card-content">
+              <p>10 Dangerous desease Lorem spam</p>
+              <div class="content-box">
+                <i class="fa-solid fa-calendar"></i>
+                <span> 2022/1/21</span>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                  Mohammadreza Mohammadi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card box-4">
+            <div class="card-content">
+              <p>10 Dangerous desease Lorem spam</p>
+              <div class="content-box">
+              
+                <i class="fa-solid fa-calendar"></i>
+                <span> 2022/1/21</span>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                  Mohammadreza Mohammadi</span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card box-5">
+            <div class="card-content">
+              <p>10 Dangerous desease Lorem spam</p>
+              <div class="content-box">
+                <i class="fa-solid fa-calendar"></i>
+                <span> 2022/1/21</span>
+                <i class="fa-solid fa-user"></i>
+                <span>
+                  Mohammadreza Mohammadi</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+   
+        
+
+
+      <!-- ................ -->
+
+
+      
+        <div class="footer">
+          <div class="footer-first-col">
+            <div class="menu-col">
+              <h3>Menu</h3>
+              <div>
+                <ul>
+                  <li>Home</li>
+                  <li>Services</li>
+                  <li>Questions</li>
+                  <li>About US</li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-col">
+              <h3>About Us</h3>
+              <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias optio sunt ipsam a, ipsa eveniet.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="footer-second-col">
+            <div class="input-container">
+            <label for="email"> <i class="fa-solid fa-envelope"></i> Email:</label>
+            <input class="footer-input" type="text" id="email">
+            </div>
+
+            <button class="footer-btn">Send</button>
+          </div>
+
+        </div>
+      
+
+  </body>
+<script src="./assets/js/index.js"></script>
+</html>
