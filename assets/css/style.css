@@ -347,6 +347,7 @@ button {
   }
   .first-col-first-row select {
     width: 100%;
+    height: 70px;
   }
   .first-col-second-row {
     justify-content: space-around;
