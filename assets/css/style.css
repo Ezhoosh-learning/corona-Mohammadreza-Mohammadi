@@ -46,7 +46,7 @@ body {
   font-weight: 700;
   cursor: pointer;
   transition: all 0.5s linear;
-  /* box-shadow: 0 0 5px black; */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .start-btn:hover{
   transform: scale(1.05);
@@ -178,7 +178,7 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.5s linear;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .second-button {
   width: 120px;
@@ -189,7 +189,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s linear;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .first-button:hover,.second-button:hover{
   transform: scale(1.05);
@@ -203,16 +203,23 @@ body {
 }
 
 .image-container {
-  width: 400px;
-  height: 400px;
+  width: 30vw;
+  height: 30vw;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 250px;
+  min-height: 250px;
+  /* width: 400px;
+  height: 400px; */
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   overflow: hidden;
   background-color: #00c897;
+  
 }
-.image-container > img {
+.image-container img {
   width: 60%;
   max-width: 100%;
   object-fit: cover;
@@ -289,12 +296,12 @@ button {
   /* background-color: snow; */
   padding:10px;
   border: none;
-  box-shadow: 0 0 20px black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .filter-btn{
   cursor: pointer;
   transition: all 0.5s linear;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .filter-btn:hover{
   transform: scale(1.05);
@@ -330,7 +337,7 @@ button {
   align-items: space-around;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px #909090;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   padding: 30px;
 }
 .statistics-second-col h2 {
@@ -400,15 +407,23 @@ button {
 }
 .chart {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 10px;
 }
 .canvas-container {
-  height: 250px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+canvas{
+  display: block;
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .chart-second-col {
-  height: 250px;
+  max-height: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -416,7 +431,7 @@ button {
   align-items: space-around;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px #909090;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   padding: 30px;
 }
 .chart-second-col h2 {
@@ -454,10 +469,6 @@ button {
   .canvas-container{
     margin-top: 30px;
   }
-  .canvas-container,canvas{
-    max-width: 100%;
-    scale: 1.1;
-  }
 }
 
 .orders {
@@ -466,7 +477,7 @@ button {
 .orders-row {
   padding: 40px;
   background-color: #ffffff;
-  box-shadow: 0 0 5px #909090;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   color: black;
 }
@@ -486,7 +497,7 @@ button {
   border: none;
   cursor: pointer;
   transition: all 0.5s linear;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .orders-second-row {
@@ -525,7 +536,7 @@ thead th {
   color: snow;
   cursor: pointer;
   transition: all 0.5s linear;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .orders-first-btn:hover,.orders-second-btn:hover{
   transform: scale(1.05);
@@ -775,7 +786,7 @@ label {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.5s linear;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .footer-btn:hover{
 transform: scale(1.05);

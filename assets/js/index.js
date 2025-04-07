@@ -1,4 +1,3 @@
-
 const hamburger = document.getElementById('hamburger');
 const navbar = document.querySelector('.navbar');
 
@@ -6,15 +5,13 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navbar.classList.toggle('active');
 });
-const labels = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-];
+
+
+Chart.defaults.font.size = 14;
+Chart.defaults.font.family = 'Arial';
+
+const labels = ["January", "February", "March", "April", "May", "June", "July"];
+
 const data = {
   labels: labels,
   datasets: [
@@ -27,6 +24,7 @@ const data = {
     },
   ],
 };
+
 const data2 = {
   labels: labels,
   datasets: [
@@ -40,13 +38,54 @@ const data2 = {
   ],
 };
 
+const chartOptions = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      labels: {
+        font: {
+          size: 16,
+        },
+      },
+    },
+    tooltip: {
+      bodyFont: {
+        size: 14,
+      },
+      titleFont: {
+        size: 16,
+      },
+    },
+  },
+  scales: {
+    x: {
+      ticks: {
+        font: {
+          size: 14,
+        },
+      },
+    },
+    y: {
+      ticks: {
+        font: {
+          size: 14,
+        },
+      },
+    },
+  },
+};
+
 const config = {
   type: "line",
   data: data,
+  options: chartOptions,
 };
+
 const config2 = {
   type: "line",
   data: data2,
+  options: chartOptions,
 };
 
 window.onload = function () {
